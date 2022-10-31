@@ -1,0 +1,41 @@
+-- Adicionar data de nascimento da tabela cliente
+ALTER TABLE cliente
+ADD data_nasc date;
+select * from cliente;
+
+update cliente set data_nasc = '2002-01-06' 
+where cpf = '255.655.525-52';
+
+update cliente set data_nasc = '2000-09-13' 
+where cpf = '555.666.522-97';
+
+-- Retirar estilo da tabela produto
+ALTER TABLE produtos
+DROP COLUMN estilo;
+select * from produtos;
+
+-- Adicionar e-mail e telefone na tabela fornecedor
+ALTER TABLE fornecedores
+add email varchar,
+add telefone varchar;
+select * from fornecedores;
+
+update fornecedores set 
+email = 'joaozinhoipotacoes@gmail.com', 
+telefone = '(48) 99187-9022' where cnpj = '22.333.333/0001-22';
+
+update fornecedores set 
+email = 'lilaimpotacoes@gmail.com', 
+telefone = '(48) 99187-9722' where cnpj = '11.222.343/0001-12';
+
+update fornecedores set 
+email = 'kate@gmail.com', 
+telefone = '(48) 99187-9872' where cnpj = '55.555.555/0001-85';
+
+select * from fornecedores;
+
+-- Renomear chave primaria do funcionario
+ALTER TABLE funcionarios
+RENAME COLUMN numcarteiratrabalho to PIS;
+
+select * from funcionarios;
