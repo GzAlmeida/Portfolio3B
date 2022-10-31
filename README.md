@@ -2,12 +2,12 @@
 
 ## 1 trimestre
 ### Banco de Dados 
-- []()
-- []()
-
-### Modelagem de sistemas 
 - [Avtd](BancoDados/Atvd)
 - [Atvd](BancoDados/Atvd2)
+
+### Modelagem de sistemas 
+- []()
+- []()
 
 ### Programação de aplicativos
 - []()
