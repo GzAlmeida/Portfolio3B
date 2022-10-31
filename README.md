@@ -6,8 +6,8 @@
 - []()
 
 ### Modelagem de sistemas 
-- []()
-- []()
+- [Avtd](BancoDados/Atvd)
+- [Atvd](BancoDados/Atvd2)
 
 ### Programação de aplicativos
 - []()
@@ -36,5 +36,5 @@
 - []()
 
 ## Teste de sistemas 
-= []()
+- []()
 - []()
