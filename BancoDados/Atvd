@@ -1,0 +1,80 @@
+-- Criando e inserindo dados em FORNECEDORES --
+create table fornecedores(
+	cnpj varchar(18) primary key,
+	nomeFantasia varchar,
+	tipoRoupa varchar,
+	local varchar);
+INSERT INTO fornecedores
+(cnpj, nomeFantasia, tipoRoupa, local)
+values
+('22.333.333/0001-22', 'Joãozinho impotações', 'Jeans', 'São Paulo'),
+('11.222.343/0001-12', 'Lila importações', 'Vestidos', 'São Paulo'),
+('55.555.555/0001-85', 'Kate', 'shorts', 'São Paulo');
+
+-- Criando e inserindo dados em FUNCIONARIOS --
+CREATE TABLE funcionarios(
+	numCarteiraTrabalho varchar(14) primary key,
+	nome varchar,
+	cpf varchar,
+	salario decimal(7,2),
+	cargaHoraria int,
+	cargo varchar);
+INSERT INTO funcionarios
+(numCarteiraTrabalho, nome, cpf, salario, cargaHoraria, cargo)
+values
+('33.55555.22-1', 'Sheldon', '255.655.582-45', 1000.00, 5, 'Estagiário'),
+('55.55555.22-8', 'Jéssica', '638.885.319-53', 2000.00, 8, 'Estoquista');
+
+-- Criando e inserindo dados em CLIENTE --
+CREATE TABLE cliente(
+	cpf varchar(14) primary key,
+	nome varchar,
+	email varchar,
+	endereco varchar,
+	telefone varchar);
+INSERT INTO cliente
+(cpf, nome, email, endereco, telefone)
+values
+('255.655.525-52', 'William', 'will@gmail.com', 'Rua Tal', '(48)99999-9999'),
+('555.666.522-97', 'José', 'jose@gmail.com', 'Avenida Tal', '(48)99999-8555');
+
+-- Criando e inserindo dados em PRODUTOS --
+-- Tabela contem uma chave estrangeira ---
+-- PRODUTO N-->1 FORNCEDOR --
+CREATE TABLE produtos(
+	codProd bigint primary key,
+	tecido varchar,
+	tamanho varchar,
+	modelo varchar,
+	estilo varchar,
+	marca varchar,
+	preco decimal(5,2), --preço maximo 999,99
+	codFornecedor varchar(18),
+	foreign key (codFornecedor) references fornecedores(cnpj)
+	-- codFornecedor varchar(18) references fornecedores
+	);
+INSERT INTO produtos
+(codProd, tecido, tamanho, modelo, estilo, marca, preco, codFornecedor)
+values
+(654987, 'Poliamida', 'M', 'Short', 'Esporte', 'Rolamoça', 54.90, '55.555.555/0001-85'),
+(85594, 'Algodão', 'G', 'Vestido', 'Gala', 'Lança Perfume', 350.00, '11.222.343/0001-12');
+
+-- Criando e inserindo dados em VENDA --
+-- Tabela de relacionamento -- 
+CREATE TABLE vendas(
+	data date,
+	codFuncionario varchar(14) references funcionarios,
+	codProduto bigint references produtos, 
+	codCliente varchar(14) references cliente
+);
+INSERT INTO vendas
+(data, codFuncionario, codProduto, codCliente)
+values
+('2022-02-16', '55.55555.22-8', 85594, '255.655.525-52'),
+('2022-02-17', '55.55555.22-8', 654987, '555.666.522-97');
+
+-- Visualização de dados
+-- tabelas unicas
+-- * > todas as colunas
+select * from fornecedores
+select nomefantasia as nome, local from fornecedores
