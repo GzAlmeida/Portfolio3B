@@ -1,0 +1,19 @@
+1- \copy netflix_titles from 'C:\Users\gabriel_z_almeida\Downloads\AtividadeAvaliativa\netflix_titles.csv' delimiter ',' csv header encoding 'UTF-8'; 
+
+2- select  (title, country, rating, duration, listed_in) from netflix_titles where tipo  ilike'%movie%' 
+
+3- \copy (select title, country, rating, duration, listed_in from netflix_titles) to 'C:\Users\gabriel_z_almeida\Downloads\AtividadeAvaliativa\netflix_titles.csv' delimiter ',' csv header encoding 'UTF-8' 
+
+4- select * from netflix_titles where data_adicionado >= '2019-07-01' and data_adicionado <= '2019-12-31' 
+
+5- select * from netflix_titles where atores ilike '%adam sandler%'
+
+6- select * from netflix_titles where diretor ilike '%Quentin Tarantino%' 
+
+7- select * from netflix_titles where genero ilike '%drama%'
+
+8- \copy laptop_price from 'C:\Users\gabriel_z_almeida\Downloads\AtividadeAvaliativa\laptod_price.csv' delimiter ',' csv header;
+
+9- select preco_euros, (preco_euros * 0.9) as preco_sugerido from laptop_price
+
+10- \copy (select preco_euros, (preco_euros * 0.9) as preco_sugerido from laptop_price) to 'C:\Users\gabriel_z_almeida\Downloads\AtividadeAvaliativa\laptop_price.csv' delimiter ',' csv header
