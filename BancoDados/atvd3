@@ -1,0 +1,63 @@
+-- Exercicio 1
+
+create table departamento(
+id int primary key,
+nome varchar,
+sigla varchar
+);
+
+----------------------------------------------------------
+-- Exercicio 2
+
+create table funcionario(
+id int primary key,
+nome varchar,
+matricula varchar,
+id_departamento int	references departamento (id)
+);
+----------------------------------------------------------
+-- Exercicio 3
+
+alter table departamento add column descricao varchar;
+
+select * from funcionario
+
+-- Exercicio 4
+
+alter table funcionario rename column nome to sigla
+
+-- Exercicio 5
+
+insert into departamento 
+(id, nome, sigla, descricao)
+values
+(1, 'departamento_1', 'dp1', 'departamento basico eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'),
+(2, 'departamento_2', 'dp2', 'departamento basico ddddddddddddddddddddddddddddddddd'),
+(3, 'departamento_3', 'dp3', 'departamento basico ccccccccccccccccccccccccccccccccc'),
+(4, 'departamento_4', 'dp4', 'departamento basico bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'),
+(5, 'departamento_5', 'dp5', 'departamento basico aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
+
+-- Exercicio 6
+
+insert into funcionario 
+(id, sigla, matricula, id_departamento)
+values
+(01, 'jj', '10', '1'),
+(02, 'ii', '11', '2'),
+(03, 'hh', '32', '3'),
+(04, 'gg', '55', '4'),
+(05, 'ff', '76', '5'),
+(06, 'ee', '77', '2'),
+(07, 'dd', '98', '4'),
+(08, 'cc', '09', '5'),
+(09, 'bb', '08', '1'),
+(10, 'aa,' '13', '1');
+-- Exercicio 7
+
+select * from funcionario inner join departamento on funcionario.id_departamento = departamento.id;
+-- Exercicio 8
+
+delete from funcionario where id_departamento = 1
+
+-- Exercicio 9
+select from funcionario where sigla = 'a%'
