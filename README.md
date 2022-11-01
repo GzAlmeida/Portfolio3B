@@ -10,8 +10,8 @@
 - [Atvd](ModelagemSistemas/Prova01.png)
 
 ### Programação de aplicativos
-- [Atvd]()
-- [Avtd]()
+- []()
+- []()
 
 ## 2 trimestre 
 ## Banco de Dados 2
@@ -23,8 +23,8 @@
 - [Avtd](ModelagemSistemas/Untitled%20(1).pdf)
 
 ### Programação de aplicativos 2
-- [Avtd]()
-- [Avtd]()
+- []()
+- []()
 
 ## 3 trimestre
 ## Modelagem de sistemas 2
