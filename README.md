@@ -27,11 +27,11 @@
 - []()
 
 ## 3 trimestre
-### Modelagem de sistemas 2
+### Modelagem de sistemas 3
 - []()
 - []()
 
-### Programação de aplicativos 2
+### Programação de aplicativos 3
 - []()
 - []()
 
