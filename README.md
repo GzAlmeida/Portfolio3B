@@ -6,8 +6,8 @@
 - [Atvd](BancoDados/Atvd2)
 
 ### Modelagem de sistemas 
-- [Avtd]()
-- [Atvd]()
+- [Avtd](ModelagemSistemas/Diagrama%20Zuco.drawio.png)
+- [Atvd](ModelagemSistemas/Prova01.png)
 
 ### Programação de aplicativos
 - [Atvd]()
@@ -19,8 +19,8 @@
 - [Atvd](BancoDados/Avtd4)
 
 ## Modelagem de sistemas 2
-- [Avtd]()
-- [Avtd]()
+- [Avtd](ModelagemSistemas/Untitled%20Diagram.drawio.png)
+- [Avtd](ModelagemSistemas/Untitled%20(1).pdf)
 
 ### Programação de aplicativos 2
 - [Avtd]()
