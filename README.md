@@ -10,6 +10,7 @@
 ### Modelagem de sistemas 
 - [Avtd](ModelagemSistemas/Diagrama%20Zuco.drawio.png)
 - [Atvd](ModelagemSistemas/Prova01.png)
+- [Diagrama](ModelagemSistemas/presidio.png)
 
 ### Programação de aplicativos
 - [GEspacial](ProgramaçãoAplicativos/g-espacial.zip)
@@ -29,12 +30,11 @@
 ### Programação de aplicativos 2
 - [Cigarro](ProgramaçãoAplicativos/app-cigarro.zip)
 
+### Desenvolvimento de Sistemas 2
+
+- [ZucoPAY](DesenvolvimentoSistemas/ZUCOPAY.pdf)
 
 ## 3 trimestre
-### Modelagem de sistemas 3
-- []()
-- []()
-
 ### Programação de aplicativos 3
 - [Matriz](ProgramaçãoAplicativos/matriz.zip)
 - [Urna](ProgramaçãoAplicativos/urna.zip)
