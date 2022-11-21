@@ -4,6 +4,8 @@
 ### Banco de Dados 
 - [Avtd](BancoDados/Atvd)
 - [Atvd](BancoDados/Atvd2)
+- [LojadeRoupas](BancoDados/LojaRoupas)
+- [Zoologico]()
 
 ### Modelagem de sistemas 
 - [Avtd](ModelagemSistemas/Diagrama%20Zuco.drawio.png)
